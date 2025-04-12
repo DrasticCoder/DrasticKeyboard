@@ -1,6 +1,68 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+
+# 🧠 DrasticKeyboard
+
+**DrasticKeyboard** is a custom, gesture-based virtual keyboard built for mobile devices, heavily inspired by the [ANIHORTES keyboard](https://www.exideas.com/ME/). It is designed from the ground up to maximize typing speed and accuracy using just one or two fingers — perfectly suited for touch screens.
+
+---
+
+## 📖 Research-Backed Design
+
+This project is based on insights from the paper:
+
+> **"ICMI: An Efficient, Non-QWERTY, Stylus-Based Text Input Method"**  
+> *International Conference on Multimodal Interfaces (ICMI), 2003*  
+> [Read the full paper](https://www.exideas.com/ME/ICMI2003Paper.pdf)
+
+I followed the same design principles used in MessagEase:
+
+- **Fitts’ Law**: To minimize finger travel and improve speed.
+- **Letter frequency tables**: High-frequency letters are placed in central, easy-to-reach positions.
+- **Digraph frequency**: Common two-letter combinations are optimized for fluid, fast input.
+
+---
+
+## 🎯 Key Features
+
+- 🧭 **9-Key Layout** based on high-frequency letters: `ANIHORTES`
+- 🎯 **Gesture-Based Input**: Swipe in different directions to enter alternate letters
+- 📐 **Larger, Fewer Keys**: 3.5x bigger than standard QWERTY keys for better accuracy
+- 🧠 **Minimal Learning Curve**: Small investment of time leads to a massive boost in typing comfort
+- 🎮 **Gamified Learning** (planned): Just like MessagEase Game, a fun way to train your muscle memory
+- ⚙️ **Custom Settings Page**: Theme, swipe trail, god mode, key colors, etc.
+- 🔥 **God Mode**: Transparent keyboard for muscle-memory users
+- 📏 **Resizable Keyboard**: Swipe to increase/decrease keyboard height
+- 🗣️ **Speech-to-Text** & 😎 **Emojis** support (in progress)
+- 🧠 **Smart Backspace**: Swipe to delete words, not just letters
+
+---
+
+## 📲 Built With
+
+- **React Native + Expo** (for cross-platform UI development)
+- **Custom Gesture Engine** (for accurate and forgiving swipe detection)
+- **Context + Hooks** for clean state management
+
+---
+
+## 🛠️ Roadmap
+
+- [x] Core swipe keyboard layout
+- [x] NumLock + multi-state keys
+- [x] Word-wise backspace with drag
+- [x] Transparent mode (God Mode)
+- [ ] System keyboard integration (React Native ejection required)
+- [ ] Game to train users
+- [ ] Emoji panel & clipboard manager
+- [ ] Multi-language support
+
+---
+
+## 💬 Want to Contribute?
+
+If you’re into keyboards, gesture input, UI/UX for accessibility, or are a fan of HCI research—jump in! Let’s make text input better, faster, and more fun.
+
+
 
 ## Get started
 
@@ -25,26 +87,3 @@ In the output, you'll find options to open the app in a
 
 You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
