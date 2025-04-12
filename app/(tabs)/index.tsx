@@ -48,6 +48,9 @@ export default function HomeScreen() {
             onBackspace={handleBackspace}
             onEnter={handleEnter}
             onKeyPress={handleKeyPress}
+            onEmoji={function (): void {
+              throw new Error('Function not implemented.');
+            }}
           />
         )}
       </View>
